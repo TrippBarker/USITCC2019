@@ -1,11 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label layoutX="275.0" layoutY="191.0" text="REGISTER" />
+      <HBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" prefWidth="150.0">
+               <children>
+                  <Label contentDisplay="CENTER" prefWidth="150.0" text="Name" />
+                  <TextField prefWidth="150.0" promptText="first name" />
+                  <TextField prefWidth="150.0" promptText="middle initial" />
+                  <TextField prefWidth="150.0" promptText="last name" />
+                  <Label prefWidth="150.0" text="Address" />
+                  <TextField prefWidth="150.0" promptText="street" />
+                  <TextField prefWidth="150.0" promptText="city" />
+                  <ComboBox prefWidth="150.0" promptText="state" />
+                  <TextField prefWidth="150.0" promptText="zip" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefWidth="150.0">
+               <children>
+                  <Label contentDisplay="CENTER" prefWidth="150.0" text="Account" />
+                  <TextField prefWidth="150.0" promptText="username" />
+                  <TextField prefWidth="150.0" promptText="password" />
+                  <TextField prefWidth="150.0" promptText="confirm password" />
+                  <Label contentDisplay="CENTER" prefWidth="150.0" text="Contact" />
+                  <TextField prefWidth="150.0" promptText="email" />
+                  <TextField prefWidth="150.0" promptText="phone" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
    </children>
 </AnchorPane>

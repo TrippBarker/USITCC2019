@@ -1,20 +1,19 @@
 package application;
 	
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
-import javafx.scene.Scene;
 
 
 public class Main extends Application {
 	
-	public SceneSwitcher ss;
+	public static SceneSwitcher ss;
 	
+	public String loginScenePath = "scenes/LoginScene.fxml";
 	
 	@Override
 	public void start(Stage primaryStage) throws Exception{
-		primaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("scenes/LoginScene.fxml"))));
-		primaryStage.show();
+		ss = new SceneSwitcher(primaryStage);
+		ss.switchScene(loginScenePath);
 	}
 	
 	public static void main(String[] args) {
