@@ -27,7 +27,6 @@ public class LoginSceneController {
 	}
 	
 	public void RegisterNewUser() throws IOException {
-		System.out.println("hello");
-		Main.ss.switchScene("scenes/RegisterScene.fxml");
+		Main.ss.switchScene(Main.REGISTER_SCENE_PATH);
 	}
 }

@@ -8,12 +8,13 @@ public class Main extends Application {
 	
 	public static SceneSwitcher ss;
 	
-	public String loginScenePath = "scenes/LoginScene.fxml";
+	public static final String LOGIN_SCENE_PATH = "scenes/LoginScene.fxml";
+	public static final String REGISTER_SCENE_PATH = "scenes/RegisterScene.fxml";
 	
 	@Override
 	public void start(Stage primaryStage) throws Exception{
 		ss = new SceneSwitcher(primaryStage);
-		ss.switchScene(loginScenePath);
+		ss.switchScene(LOGIN_SCENE_PATH);
 	}
 	
 	public static void main(String[] args) {
