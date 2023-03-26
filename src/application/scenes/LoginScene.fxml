@@ -15,12 +15,12 @@
          <children>
             <HBox alignment="CENTER" prefHeight="50.0">
                <children>
-                  <TextField fx:id="usernameField" focusTraversable="false" prefWidth="150.0" promptText="username">
+                  <TextField fx:id="usernameField" focusTraversable="false" onKeyTyped="#checkValidEntry" prefWidth="150.0" promptText="username">
                      <HBox.margin>
                         <Insets right="10.0" />
                      </HBox.margin>
                   </TextField>
-                  <PasswordField fx:id="passwordField" focusTraversable="false" prefWidth="150.0" promptText="password">
+                  <PasswordField fx:id="passwordField" focusTraversable="false" onKeyTyped="#checkValidEntry" prefWidth="150.0" promptText="password">
                      <HBox.margin>
                         <Insets left="10.0" />
                      </HBox.margin>
