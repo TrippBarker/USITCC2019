@@ -84,7 +84,5 @@ public class RegisterSceneController {
 			source.setText(source.getText().substring(0, maxLen));
 		}
 		source.positionCaret(caretPos);
-		
-		
 	}
 }
