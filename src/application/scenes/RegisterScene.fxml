@@ -20,17 +20,17 @@
                         <Insets bottom="10.0" />
                      </VBox.margin>
                   </Label>
-                  <TextField fx:id="fNameField" prefWidth="150.0" promptText="first name">
+                  <TextField fx:id="fNameField" onKeyTyped="#checkValidEntry" prefWidth="150.0" promptText="first name">
                      <VBox.margin>
                         <Insets bottom="5.0" />
                      </VBox.margin>
                   </TextField>
-                  <TextField fx:id="mInitialField" prefWidth="150.0" promptText="middle initial">
+                  <TextField fx:id="mInitialField" onKeyTyped="#checkValidEntry" prefWidth="150.0" promptText="middle initial">
                      <VBox.margin>
                         <Insets bottom="5.0" />
                      </VBox.margin>
                   </TextField>
-                  <TextField fx:id="lNameField" prefWidth="150.0" promptText="last name">
+                  <TextField fx:id="lNameField" onKeyTyped="#checkValidEntry" prefWidth="150.0" promptText="last name">
                      <VBox.margin>
                         <Insets bottom="5.0" />
                      </VBox.margin>
@@ -40,12 +40,12 @@
                         <Insets bottom="10.0" top="5.0" />
                      </VBox.margin>
                   </Label>
-                  <TextField fx:id="streetField" prefWidth="150.0" promptText="street">
+                  <TextField fx:id="streetField" onKeyTyped="#checkValidEntry" prefWidth="150.0" promptText="street">
                      <VBox.margin>
                         <Insets bottom="5.0" />
                      </VBox.margin>
                   </TextField>
-                  <TextField fx:id="cityField" prefWidth="150.0" promptText="city">
+                  <TextField fx:id="cityField" onKeyTyped="#checkValidEntry" prefWidth="150.0" promptText="city">
                      <VBox.margin>
                         <Insets bottom="5.0" />
                      </VBox.margin>
@@ -55,7 +55,7 @@
                         <Insets bottom="5.0" />
                      </VBox.margin>
                   </ComboBox>
-                  <TextField fx:id="zipField" prefWidth="150.0" promptText="zip">
+                  <TextField fx:id="zipField" onKeyTyped="#checkValidEntry" prefWidth="150.0" promptText="zip">
                      <VBox.margin>
                         <Insets bottom="5.0" />
                      </VBox.margin>
@@ -69,17 +69,17 @@
                         <Insets bottom="10.0" />
                      </VBox.margin>
                   </Label>
-                  <TextField fx:id="usernameField" prefWidth="150.0" promptText="username">
+                  <TextField fx:id="usernameField" onKeyTyped="#checkValidEntry" prefWidth="150.0" promptText="username">
                      <VBox.margin>
                         <Insets bottom="5.0" />
                      </VBox.margin>
                   </TextField>
-                  <TextField fx:id="passwordField" prefWidth="150.0" promptText="password">
+                  <TextField fx:id="passwordField" onKeyTyped="#checkValidEntry" prefWidth="150.0" promptText="password">
                      <VBox.margin>
                         <Insets bottom="5.0" />
                      </VBox.margin>
                   </TextField>
-                  <TextField fx:id="conPasswordField" prefWidth="150.0" promptText="confirm password">
+                  <TextField fx:id="conPasswordField" onKeyTyped="#checkValidEntry" prefWidth="150.0" promptText="confirm password">
                      <VBox.margin>
                         <Insets bottom="5.0" />
                      </VBox.margin>
@@ -89,12 +89,12 @@
                         <Insets bottom="10.0" top="5.0" />
                      </VBox.margin>
                   </Label>
-                  <TextField fx:id="emailField" prefWidth="150.0" promptText="email">
+                  <TextField fx:id="emailField" onKeyTyped="#checkValidEntry" prefWidth="150.0" promptText="email">
                      <VBox.margin>
                         <Insets bottom="5.0" />
                      </VBox.margin>
                   </TextField>
-                  <TextField fx:id="phoneField" prefWidth="150.0" promptText="phone">
+                  <TextField fx:id="phoneField" onKeyTyped="#checkValidEntry" prefWidth="150.0" promptText="phone">
                      <VBox.margin>
                         <Insets bottom="5.0" />
                      </VBox.margin>
