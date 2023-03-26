@@ -36,6 +36,7 @@ public class RegisterSceneController {
 	
 	public void checkValidEntry(KeyEvent e) {
 		TextField source = (TextField)e.getSource();
+		int caretPos = source.getCaretPosition();
 		String regex = "[^a-zA-Z]";
 		int maxLen = 16;
 		switch (source.getId()) {
@@ -48,7 +49,7 @@ public class RegisterSceneController {
 		case "lNameField":
 			break;
 		case "streetField":
-			regex = "[^a-zA-Z0-9]";
+			regex = "[^a-zA-Z0-9\\s]";
 			maxLen = 30;
 			break;
 		case "cityField":
@@ -57,13 +58,32 @@ public class RegisterSceneController {
 			regex = "[^0-9]";
 			maxLen = 5;
 			break;
+		case "usernameField":
+			regex = "[^a-zA-Z0-9]";
+			maxLen = 10;
+			break;
+		case "passwordField":
+			regex = "[^a-zA-Z0-9!@#$%&*_-]";
+			maxLen = 20;
+			break;
+		case "conPasswordField":
+			regex = "[^a-zA-Z0-9!@#$%&*_-]";
+			maxLen = 20;
+			break;
+		case "emailField":
+			regex = "[^a-zA-Z0-9@.]";
+			maxLen = 20;
+			break;
+		case "phoneField":
+			regex = "[^0-9]";
+			maxLen = 10;
 		}
 		
 		source.setText(source.getText().replaceAll(regex, ""));
 		if (source.getText().length() > maxLen) {
 			source.setText(source.getText().substring(0, maxLen));
 		}
-		source.positionCaret(source.getText().length());
+		source.positionCaret(caretPos);
 		
 		
 	}
